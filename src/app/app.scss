@@ -14,3 +14,46 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.head-menu{
+    padding-bottom: 22px;
+    .button-ios{
+        height: 28px;
+        width: 40px;
+        position: absolute;
+        right: 3px;
+        font-size: 1.3rem;
+    }
+    h4{
+        font-size: 1.6rem;
+        font-weight: normal;
+        // color: color($colors,light);
+    }
+    p{
+        font-size: 1.2rem;
+        // color: color($colors,light);
+    }
+}
+
+
+.user-img{
+    position: relative;
+    display: inline-block;
+    margin: 25px 0 10px 0;
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    ion-icon{
+        width: 28px;
+        height: 28px;
+        line-height: 1.75;
+        font-size: 1.6rem;
+        border-radius: 50%;
+        color: white;
+        position: absolute;
+        bottom: -1px;
+        right: 6px;
+        // background: color($colors , secondary);
+    }
+}
