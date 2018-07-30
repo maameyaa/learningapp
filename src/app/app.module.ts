@@ -4,7 +4,10 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+// import { MainPage } from '../pages/main/main';
 import { AssessmentPage } from '../pages/assessment/assessment';
+import { TimerPage } from '../pages/timer/timer';
+import { LessonsPage } from '../pages/lessons/lessons';
 // import { LoginPage } from '../pages/login/login';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -14,7 +17,9 @@ import { AuthServiceProvider } from '../providers/auth-service/auth-service';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
+    // MainPage,
+    TimerPage,
+    LessonsPage,
     // LoginPage,
     AssessmentPage
   ],
@@ -25,7 +30,9 @@ import { AuthServiceProvider } from '../providers/auth-service/auth-service';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
+    // MainPage,
+    TimerPage,
+    LessonsPage,
     // LoginPage,
     AssessmentPage
   ],

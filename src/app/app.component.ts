@@ -7,7 +7,9 @@ import { AuthServiceProvider } from '../providers/auth-service/auth-service';
 // import { HomePage } from '../pages/home/home';
 import { MainPage } from '../pages/main/main';
 import { AssessmentPage } from '../pages/assessment/assessment';
-import { LoginPage } from '../pages/login/login';
+// import { LoginPage } from '../pages/login/login';
+import { TimerPage } from '../pages/timer/timer';
+import { LessonsPage } from '../pages/lessons/lessons';
 
 
 
@@ -17,7 +19,7 @@ import { LoginPage } from '../pages/login/login';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = LoginPage;
+  rootPage: string = 'LoginPage' ;
 
   pages: Array<{title: string, component: any}>;
 
@@ -30,6 +32,8 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: MainPage },
+      { title: 'Lessons', component: LessonsPage },
+      { title: 'Timer', component: TimerPage },
       { title: 'Assessment', component: AssessmentPage }
     ];
 
@@ -54,9 +58,13 @@ export class MyApp {
     this.nav.setRoot(page.component);
   }
 
+  goTo(page) {
+    this.nav.setRoot(page);
+  }
+
   public logout() {
     this.auth.logout().subscribe(succ => {
-      this.nav.setRoot('LoginPage')
+      this.goTo('LoginPage');
     });
   }
 }

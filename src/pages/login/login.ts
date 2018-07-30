@@ -49,6 +49,5 @@ export class LoginPage {
       buttons: ['OK']
     });
 
-    // alert.present(prompt);
   }
 }

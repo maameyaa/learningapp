@@ -1,0 +1,79 @@
+<!--
+  Generated template for the TwiPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Twi Lessons</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-item>
+    <ion-label>Lesson Day </ion-label>
+    <ion-select (ionChange)="weekChange($event)">
+      <ion-option value="01">Week 1</ion-option>
+      <ion-option value="02">Week 2</ion-option>
+      <ion-option value="03" selected="true">Week 3</ion-option>
+      <ion-option value="04">Week 3</ion-option>
+      <ion-option value="05">Week 4</ion-option>
+      <ion-option value="06">Week 5</ion-option>
+      <ion-option value="07">Week 6</ion-option>
+      <ion-option value="08">Week 7</ion-option>
+      <ion-option value="09">Week 8</ion-option>
+      <ion-option value="10">Week 9</ion-option>
+      <ion-option value="11">Week 10</ion-option>
+      <ion-option value="12">Week 13</ion-option>
+    </ion-select>
+    <ion-select (ionChange)="dayChange($event)">
+      <ion-option>Day 1</ion-option>
+      <ion-option>Day 2</ion-option>
+      <ion-option>Day 3</ion-option>
+      <ion-option>Day 4</ion-option>
+      <ion-option selected="true">Day 5</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-card>
+
+    <ion-card-content>
+
+      Week 1 Lesson 1
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-content>
+      Week 1 Lesson 2
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-content>
+      Week 1 Lesson 3
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-card-content>
+      Week 1 Lesson 4
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>
