@@ -22,4 +22,7 @@ export class EnglishPage {
     console.log('ionViewDidLoad EnglishPage');
   }
 
+  goTo(page){
+    this.navCtrl.push(page);
+  }
 }

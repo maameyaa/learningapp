@@ -22,4 +22,7 @@ export class TwiPage {
     console.log('ionViewDidLoad TwiPage');
   }
 
+  goTo(page){
+    this.navCtrl.push(page);
+  }
 }
