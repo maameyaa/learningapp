@@ -16,11 +16,22 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="card-background-page">
 
-  <ion-tabs>
-      <ion-tab [root]="" tabTitle="English Lessons" tabIcon="information-circle"></ion-tab>
-      <ion-tab [root]="" tabTitle="Twi Lessons" tabIcon="information-circle"></ion-tab>
-  </ion-tabs>
+  <ion-card (click)="goTo('LessonsPage')" >
+    <img src="assets/imgs/main/1.png"/>
+  </ion-card>
+
+  <ion-card (click)="goTo('TimerPage')" >
+    <img src="assets/imgs/main/2.png"/>
+  </ion-card>
+
+  <ion-card (click)="goTo('AssessmentPage')" >
+    <img src="assets/imgs/main/3.png"/>
+  </ion-card>
+
+  <ion-card (click)="goTo('LessonsPage')" >
+    <img src="assets/imgs/main/4.png"/>
+  </ion-card>
 
 </ion-content>
