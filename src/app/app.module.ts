@@ -3,11 +3,11 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+//import { HomePage } from '../pages/home/home';
 // import { MainPage } from '../pages/main/main';
-import { AssessmentPage } from '../pages/assessment/assessment';
-import { TimerPage } from '../pages/timer/timer';
-import { LessonsPage } from '../pages/lessons/lessons';
+//import { AssessmentPage } from '../pages/assessment/assessment';
+//import { TimerPage } from '../pages/timer/timer';
+//import { LessonsPage } from '../pages/lessons/lessons';
 // import { LoginPage } from '../pages/login/login';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -18,10 +18,10 @@ import { AuthServiceProvider } from '../providers/auth-service/auth-service';
   declarations: [
     MyApp,
     // MainPage,
-    TimerPage,
-    LessonsPage,
+    //TimerPage,
+  //  LessonsPage,
     // LoginPage,
-    AssessmentPage
+  //  AssessmentPage
   ],
   imports: [
     BrowserModule,
@@ -31,10 +31,10 @@ import { AuthServiceProvider } from '../providers/auth-service/auth-service';
   entryComponents: [
     MyApp,
     // MainPage,
-    TimerPage,
-    LessonsPage,
+    //TimerPage,
+    //LessonsPage,
     // LoginPage,
-    AssessmentPage
+    //AssessmentPage
   ],
   providers: [
     StatusBar,

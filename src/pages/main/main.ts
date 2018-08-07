@@ -22,4 +22,8 @@ export class MainPage {
     console.log('ionViewDidLoad MainPage');
   }
 
+  goTo(page){
+    this.navCtrl.push(page);
+  }
+
 }
